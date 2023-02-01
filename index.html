@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    <title>Encriptadito</title>
+</head>
+<body>
+    <header>
+        <img src="Vector.png" alt="Logo">
+    </header>
+    <main>
+        <section class="seccion_1">
+            <textarea name="textoIngresado" id="textoEncriptado" cols="30" rows="10" required placeholder="Texto a encriptar"></textarea>
+            <div class="warning">
+                <p>
+                    De preferencia, use solo minusculas y no incluya acentos.
+                </p>
+            </div>
+            <div class="botones">
+                <button type="button" id="botonEncriptado">Encriptar</button>
+                <button type="button" id="botonDesencriptado">Desencriptar</button>
+            </div>
+        </section>
+        <section class="seccion_2">
+            <img src="Muñeco.png" alt="Mono" id="imagen">
+            
+            <h3 id="subtitulo">No se encontró ningun mensaje</h3>
+            
+            <textarea id="textoDesencriptado"></textarea>
+            
+            <button type="button" id="botonCopiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<script>
+    var btn1 = document.querySelector("#botonEncriptado");
+    btn1.onclick = encriptar;
+    var btn2 = document.querySelector("#botonDesencriptado");
+    btn2.onclick = desencriptar;
+    var btn3 = document.querySelector("#botonCopiar");
+    btn3.onclick = copiar;
+</script>
+</html>

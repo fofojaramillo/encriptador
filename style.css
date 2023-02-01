@@ -1,0 +1,219 @@
+*{
+    background-color: #E9ECF8;
+    font-family: 'Montserrat', sans-serif;
+}
+header img{
+    margin-left: 35px;
+    margin: 15px;
+}
+main{
+    width: 100%;
+    height: 660px;
+    display: flex;
+    justify-content:space-between
+}
+section{
+    height: 100%;
+}
+.seccion_1{
+    width: 60%;
+}
+#textoEncriptado{
+    width: 90%;
+    height: 70%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    margin-left: 30px;
+    border-radius: 10px;
+    border-color: #E9ECF8;
+
+    font-size: medium;
+    font-weight: bolder;
+    color: #0A3871;
+    resize: none;
+}
+#textoEncriptado:focus{
+    outline:none;
+}
+::placeholder {
+    font-weight: bold;
+    font-style: italic;
+    color: #0A3871;
+}
+.warning{
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+}
+.botones{
+    text-align: center;
+}
+#botonEncriptado,#botonDesencriptado,#botonCopiar{
+    width: 30%;
+    height: 40px;
+    margin: 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    transition: all 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+}
+#botonEncriptado{
+    background-color: #0A3871;
+    color: white;
+}
+#botonEncriptado:hover{
+    box-shadow: inset 0 0 20px #356EA9, 0 0 20px #609ED4;
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px white;
+}
+#botonEncriptado:active{
+    background-color: #356EA9;
+    color: #0A3871;
+}
+#botonDesencriptado{
+    background-color: #EFF1FA;
+    color: #0A3871;
+}
+#botonDesencriptado:hover{
+    box-shadow: inset 0 0 20px #356EA9, 0 0 20px #609ED4;
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px rgb(255, 255, 255);
+}
+#botonDesencriptado:active{
+    background-color: #356EA9;
+    color: white;
+}
+.seccion_2{
+    width: 30%;
+    height: 80%;
+    margin: 25px;
+    margin-right: 100px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+}
+#imagen, #subtitulo{
+    background-color: white;
+}
+#imagen{
+    margin-top:50px;
+    object-fit: cover;
+    width: 70%;
+}
+#subtitulo{
+    font-weight: bolder;
+    margin-top: 70px;
+    color: #0A3871;
+}
+#textoDesencriptado,#botonCopiar{
+    display: none;
+}
+#textoDesencriptado{
+    height: 92%;
+    width: 90%;
+    border-color: white;
+    background-color: inherit;
+    font-size: medium;
+    font-weight: bolder;
+    color: #0A3871;
+    padding-left: 15px;
+    padding-right: 15px;
+    resize: none;
+
+}
+#textoDesencriptado:focus{
+    outline:none;
+}
+#botonCopiar{
+    background-color: white;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 1px;
+}
+#botonCopiar:hover{
+    box-shadow: inset 0 0 20px #356EA9, 0 0 20px #609ED4;
+    outline-color: rgba(49, 138, 172, 0);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px white;
+}
+#botonCopiar:active{
+    background-color: #356EA9;
+    color: white;
+}
+@media screen and (max-width:800px){
+    img{
+        scale: 1.2;
+        padding: 5%;
+    }
+    main{
+        display: block;
+    }
+    .seccion_1{
+        width: auto;
+    }
+    #textoEncriptado{
+        width: 100%;
+        padding: 20px;
+        margin: 0px;
+        margin-top: 50px;
+        font-size: 25px;
+    }
+    .botones{
+        width: 100%;
+        padding: 20px;
+    }
+    #botonEncriptado,#botonDesencriptado,#botonCopiar{
+        width: 48%;
+        height: 43px;
+        margin: 0px;
+        margin-left: 4px;
+        margin-right: 4px ;
+        font-size: 17px;
+    }
+    .seccion_2{
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+        margin-left: 20px;
+        height: fit-content;
+    }
+    #subtitulo{
+        padding-bottom: 74px;
+        font-size: 25px;
+        font-weight: bolder;
+    }
+    #imagen{
+        display: none;
+    }
+    #textoDesencriptado{
+        font-size: 25px;
+        margin: auto;
+        padding-top: 15px;
+        height: 200px;
+    }
+    #botonCopiar{
+        margin: auto;
+        margin-bottom: 25px;
+        margin-top: 15px;
+
+    }
+}
+@media screen and (max-width:450px){
+    #botonEncriptado,#botonDesencriptado,#botonCopiar{
+        width: 95%;
+        height: 43px;
+        margin: 5px;
+        font-size: 17px;
+    }
+    .seccion_2{
+        margin-top: 50px;
+    }
+}
+
+
+
